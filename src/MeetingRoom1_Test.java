@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class MeetingRoom1 {
+public class MeetingRoom1_Test {
 
     private static class Interval {
         int start;
@@ -13,28 +13,23 @@ public class MeetingRoom1 {
         }
     }
 
-    private static Interval[] given() {
-
-        Interval interval1 = new Interval(15, 20);
-        Interval interval2 = new Interval(5, 10);
-        Interval interval3 = new Interval(0, 30);
-
-
-        return new Interval[]{interval1, interval2, interval3};
-    }
-
     public static void main(String[] args) {
 
+        Interval inter3 = new Interval(3, 30);
+        Interval inter1 = new Interval(15, 20);
+        Interval inter2 = new Interval(5, 10);
 
-        System.out.println(solve(given()));
+        Interval[] intervals = {inter1, inter2, inter3};
 
+        System.out.println(solve(intervals));
     }
 
-
     private static boolean solve(Interval[] intervals) {
-        //1. 널체크와 정렬
+
+        //1 널체크
         if (intervals.length == 0) return false;
 
+        //2 내림차순 소팅 (큰수 -> 작은수)
         Arrays.sort(intervals, new Comparator<Interval>() {
             @Override
             public int compare(Interval o1, Interval o2) {
@@ -42,8 +37,7 @@ public class MeetingRoom1 {
             }
         });
 
-
-        //2. 값 비교하기. 맨 처음 끝나는 시간과 바로 앞시간의 시작시간과 비교
+        //3.값비교
         for (int i = 1; i < intervals.length; i++) {
 
             if (intervals[i - 1].end > intervals[i].start) {
@@ -53,4 +47,6 @@ public class MeetingRoom1 {
 
         return true;
     }
+
+
 }
