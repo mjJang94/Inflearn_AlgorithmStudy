@@ -3,7 +3,7 @@ package Progammers;
 import java.lang.reflect.Array;
 import java.util.*;
 
-public class Level1_sum_of_two_nums {
+public class Level1_두_개_뽑아서_더하기 {
     public static void main(String[] args) {
 
         int[] numbers = {2, 1, 3, 4, 1};

@@ -1,6 +1,6 @@
 package Progammers;
 
-public class Level1_decimal {
+public class Level1_소수찾기 {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package Progammers;
 
-public class Level1_newid_recommand {
+public class Level1_신규_아이디_추천 {
 
 
     public static void main(String[] args) {

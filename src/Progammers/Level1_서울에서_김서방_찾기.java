@@ -1,6 +1,6 @@
 package Progammers;
 
-public class Level1_find_kim {
+public class Level1_서울에서_김서방_찾기 {
 
     public static void main(String[] args) {
 

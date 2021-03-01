@@ -1,6 +1,6 @@
 package Progammers;
 
-public class Level1_watermelon {
+public class Level1_수박수박수박수박수 {
 
     public static void main(String[] args) {
 

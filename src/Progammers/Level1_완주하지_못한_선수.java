@@ -2,7 +2,7 @@ package Progammers;
 
 import java.util.*;
 
-public class Level1_unfinished_participant {
+public class Level1_완주하지_못한_선수 {
 
     public static void main(String[] args) {
 

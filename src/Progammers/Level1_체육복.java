@@ -1,6 +1,6 @@
 package Progammers;
 
-public class Level1_gym_wear {
+public class Level1_체육복 {
 
 
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package Progammers;
 
-public class Level1_handle_character {
+public class Level1_문자열_다루기_기본 {
 
     public static void main(String[] args) {
         System.out.println(solution("00bv"));
