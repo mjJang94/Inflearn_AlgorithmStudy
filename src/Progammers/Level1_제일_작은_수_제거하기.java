@@ -13,27 +13,11 @@ public class Level1_제일_작은_수_제거하기 {
     }
 
     public static int[] solution(int[] arr) {
-        int[] answer = {};
-        Stack<Integer> stack = new Stack<>();
 
-        Arrays.sort(arr);
+        if (arr.length < 1) return new int[]{-1};
 
-        int bigger = arr[0];
+        int min = Arrays.stream(arr).min().getAsInt();
 
-        for (int value : arr){
-
-            if (value > bigger){
-                stack.add(value);
-                bigger = value;
-            }
-        }
-
-        answer = new int[stack.size()];
-
-        for (int i = 0; i < answer.length; i++){
-            answer[i] = stack.pop();
-        }
-
-        return answer;
+        return Arrays.stream(arr).filter(i -> i != min).toArray();
     }
 }
