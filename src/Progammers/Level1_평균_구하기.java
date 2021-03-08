@@ -1,6 +1,6 @@
 package Progammers;
 
-public class Level_1_평균_구하기 {
+public class Level1_평균_구하기 {
 
     public static void main(String[] args) {
 
